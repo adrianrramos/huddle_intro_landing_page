@@ -1,7 +1,9 @@
+document.body.appendChild(createElement('top-container'))
+
 // =================
 // LEFT CONTAINER => TOP LEVEL ELEM
 // =================
-document.body.appendChild(createElement('left-container'));
+createChildElement('top-container', createElement('left-container'));
 
 mapChildren('left-container', [
     'logo-container',
@@ -17,7 +19,7 @@ document.getElementById('mockup').setAttribute('src', "../images/illustration-mo
 // =================
 // RIGHT CONTAINER => TOP LEVEL ELEM
 // =================
-document.body.appendChild(createElement('right-container'));
+createChildElement('top-container', createElement('right-container'));
 
 mapChildren('right-container', [
     'text-container',
