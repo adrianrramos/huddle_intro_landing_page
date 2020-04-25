@@ -9,8 +9,10 @@ mapChildren('left-container', [
 ]);
 
 createChildElement('logo-container', createElement('logo', null, 'img'));
-createChildElement('image-container', createElement('mockup', null, 'img'));
+document.getElementById('logo').setAttribute('src', "../images/logo.svg");
 
+createChildElement('image-container', createElement('mockup', null, 'img'));
+document.getElementById('mockup').setAttribute('src', "../images/illustration-mockups.svg");
 
 // =================
 // RIGHT CONTAINER => TOP LEVEL ELEM
@@ -47,6 +49,12 @@ document.getElementById('register-button').innerText = 'Register';
 // SOCIALS CONTAINER
 // -----------------
 
+const icons = [
+    "fa-facebook-f",
+    "fa-twitter",
+    "fa-instagram"
+]
+
 mapChildren('socials-container', [
     [null, 'social-borders'],
     [null, 'social-borders'],
@@ -54,7 +62,12 @@ mapChildren('socials-container', [
 ]);
 
 mapChildToClass('social-borders', [null, 'social-logos']);
-mapChildToClass('social-logos', ['media-logo', null, 'i']);
+mapChildToClass('social-logos', [null, 'media-logo fab', 'i']);
+
+const mediaLogos = document.getElementsByClassName('media-logo');
+for(let i = 0; i < mediaLogos.length; i++) {
+    mediaLogos[i].classList.add(icons[i]);
+}
 
 
 // FOOTER => TOP LEVEL ELEM
