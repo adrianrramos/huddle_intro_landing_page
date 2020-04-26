@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-* {
-    /* box-sizing: border-box; */
-    /* border: .05px solid black; */
-}
-
 body {
     background-image: url("../images/bg-desktop.svg");
     background-size: cover;
@@ -61,7 +56,6 @@ h1 {
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    align-items: baseline;
 }
 
 #title {
@@ -123,8 +117,83 @@ h1 {
     font-size: 1.25vw;
 }
 
-
-
 footer {
     text-align: center;
+}
+
+a {
+    color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    #logo-container {
+        margin: auto 0 5vh 0;
+    }
+
+    #logo {
+        width: 40vw;
+    }
+    
+    #top-container {
+        flex-direction: column;
+    }
+
+    #left-container {
+        width: 100%;
+        height: auto;
+    }
+
+    #mockup{
+        width: 100%;
+    }
+
+    #right-container {
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+    }
+
+    #title {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    #description {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #button-container {
+        align-self: center;
+    }
+
+    #register-button {
+        height: 10vw;
+        width: 45vw;
+        font-size: 4vw;
+    }
+
+    #socials-container {
+        width: 35%;
+        padding: 7vh 0 0 0;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .social-borders{
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .social-logos{
+        width: 3vw;
+        height: 3vw;
+        font-size: 3.5vw;
+    }
+
+    footer {
+        margin: 3vh auto;
+        width: 80%;
+        font-size: small;
+    }
 }

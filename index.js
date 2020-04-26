@@ -82,4 +82,4 @@ for(let i = 0; i < mediaLogos.length; i++) {
 
 document.body.appendChild(createElement('page-footer', null, 'footer'));
 createChildElement('page-footer', createElement('attribution', null, 'p'));
-document.getElementById('attribution').innerHTML = `Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Adrian Ramos</a>.`;
+document.getElementById('attribution').innerHTML = `Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/ramos-codes">Adrian Ramos</a>.`;
