@@ -1,3 +1,11 @@
+document.body.appendChild(createElement('logo-container'));
+
+mapChildren('logo-container', [
+    ['logo', null, 'img']
+]);
+document.getElementById('logo').setAttribute('src', "../images/logo.svg");
+
+// TOP CONTAINER => STARTS HERE => 
 document.body.appendChild(createElement('top-container'))
 
 // =================
@@ -6,12 +14,8 @@ document.body.appendChild(createElement('top-container'))
 createChildElement('top-container', createElement('left-container'));
 
 mapChildren('left-container', [
-    'logo-container',
     'image-container'
 ]);
-
-createChildElement('logo-container', createElement('logo', null, 'img'));
-document.getElementById('logo').setAttribute('src', "../images/logo.svg");
 
 createChildElement('image-container', createElement('mockup', null, 'img'));
 document.getElementById('mockup').setAttribute('src', "../images/illustration-mockups.svg");
@@ -24,7 +28,6 @@ createChildElement('top-container', createElement('right-container'));
 mapChildren('right-container', [
     'text-container',
     'button-container',
-    'socials-container'
 ]);
 
 // -----------------
@@ -46,10 +49,13 @@ document.getElementById('description').innerText = 'Huddle re-imagines the way w
 // -----------------
 createChildElement('button-container', createElement('register-button', null, 'button'));
 document.getElementById('register-button').innerText = 'Register';
+// TOP CONTAINER => ENDS HERE. 
 
-// -----------------
+
+// ==================
 // SOCIALS CONTAINER
-// -----------------
+// ==================
+document.body.appendChild(createElement('socials-container'));
 
 const icons = [
     "fa-facebook-f",
@@ -69,11 +75,15 @@ mapChildToClass('social-logos', [null, 'media-logo fab', 'i']);
 const mediaLogos = document.getElementsByClassName('media-logo');
 for(let i = 0; i < mediaLogos.length; i++) {
     mediaLogos[i].classList.add(icons[i]);
-}
+};
 
-
-// FOOTER => TOP LEVEL ELEM
+// FOOTER => TOP LEVEL TAG
 
 document.body.appendChild(createElement('page-footer', null, 'footer'));
 createChildElement('page-footer', createElement('attribution', null, 'p'));
 document.getElementById('attribution').innerHTML = `Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Adrian Ramos</a>.`
+
+// ===============
+// CSS styling
+// ===============
+
