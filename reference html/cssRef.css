@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    /* box-sizing: border-box; */
+    /* border: .05px solid black; */
+}
+
+body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#logo-container {
+    padding-left: 10vw;
+    margin-top: 5vh;
+}
+
+#logo-container:hover {
+    cursor: pointer;
+}
+
+#logo{
+    width: 13vw;
+    height: auto;
+}
+
+#top-container {
+    display: flex;
+    position: relative;
+    padding: 0 10vw;
+}
+
+#left-container {
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#image-container {
+    display: flex;
+}
+
+#mockup {
+    width: 90%;
+    height: auto;
+}
+
+#right-container {
+    width: 40%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#title {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+#description {
+    font-size: 1vw;
+}
+
+#register-button {
+    height: 3.25vw;
+    width: 15vw;
+    border-radius: 50px;
+    font-size: 1.25vw;
+    font-weight: 400;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 5px 5px 20px  hsl(257, 40%, 15%);
+    border: none;
+}
+
+#register-button:focus {
+    outline: none;
+}
+
+#register-button:hover {
+    cursor: pointer;
+}
+
+#socials-container {
+    padding-right: 17vw;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-border{
+    border: 1px solid white;
+    height: 3vw;
+    width: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: .75vw;
+}
+
+.social-border:hover{
+    cursor: pointer;
+}
+
+.social-logos {
+    height: 2vw;
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25vw;
+}
+
+
+
+footer {
+    text-align: center;
+}
