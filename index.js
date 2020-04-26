@@ -1,3 +1,4 @@
+// HTML BODY
 document.body.appendChild(createElement('logo-container'));
 
 mapChildren('logo-container', [
@@ -49,7 +50,7 @@ document.getElementById('description').innerText = 'Huddle re-imagines the way w
 // -----------------
 createChildElement('button-container', createElement('register-button', null, 'button'));
 document.getElementById('register-button').innerText = 'Register';
-// TOP CONTAINER => ENDS HERE. 
+// TOP CONTAINER ==> ENDS HERE. <==
 
 
 // ==================
@@ -81,9 +82,4 @@ for(let i = 0; i < mediaLogos.length; i++) {
 
 document.body.appendChild(createElement('page-footer', null, 'footer'));
 createChildElement('page-footer', createElement('attribution', null, 'p'));
-document.getElementById('attribution').innerHTML = `Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Adrian Ramos</a>.`
-
-// ===============
-// CSS styling
-// ===============
-
+document.getElementById('attribution').innerHTML = `Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Adrian Ramos</a>.`;

@@ -99,7 +99,7 @@ h1 {
     justify-content: flex-end;
 }
 
-.social-border{
+.social-borders{
     border: 1px solid white;
     height: 3vw;
     width: 3vw;
@@ -110,7 +110,7 @@ h1 {
     margin-left: .75vw;
 }
 
-.social-border:hover{
+.social-borders:hover{
     cursor: pointer;
 }
 
