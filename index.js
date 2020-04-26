@@ -5,6 +5,7 @@ mapChildren('logo-container', [
     ['logo', null, 'img']
 ]);
 document.getElementById('logo').setAttribute('src', "../images/logo.svg");
+document.getElementById('logo').setAttribute('alt', "huddle brand logo");
 
 // TOP CONTAINER => STARTS HERE => 
 document.body.appendChild(createElement('top-container'))
@@ -20,6 +21,7 @@ mapChildren('left-container', [
 
 createChildElement('image-container', createElement('mockup', null, 'img'));
 document.getElementById('mockup').setAttribute('src', "../images/illustration-mockups.svg");
+document.getElementById('mockup').setAttribute('alt', "huddle product mockup");
 
 // =================
 // RIGHT CONTAINER => TOP LEVEL ELEM
